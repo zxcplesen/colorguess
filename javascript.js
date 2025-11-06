@@ -8,7 +8,7 @@ var nickname = '';
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
 import { getDatabase, ref, push, set, onValue } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-database.js";
 
-// 🔧 Конфигурация Firebase
+// Конфигурация Firebase
 const firebaseConfig = {
     apiKey: "AIzaSyDH1L9Jx0kd-T7KOjv4aAp1h71i2KlHGvo",
     authDomain: "test-c68dd.firebaseapp.com",
@@ -20,7 +20,7 @@ const firebaseConfig = {
     measurementId: "G-4GBBF35FQV"
 };
 
-// 🚀 Инициализация Firebase
+// Инициализация Firebase
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
@@ -107,8 +107,6 @@ document.addEventListener("DOMContentLoaded", function () {
 function Start() {
     document.getElementById('add').addEventListener('click', AddNick);
     if (hearts > 0) {
-        console.log('HEARTS: ' + hearts)
-
         var red = Math.floor(Math.random() * 256) + 1;
         var green = Math.floor(Math.random() * 256) + 1;
         var blue = Math.floor(Math.random() * 256) + 1;
@@ -195,7 +193,6 @@ function AddNick() {
 }
 
 function ClickFake() {
-    console.log('попал!');
     count++;
     var el = document.getElementById('counter');
     el.innerHTML = 'COUNT: ' + count;
