@@ -22,8 +22,8 @@ body {
 }
 
 #mainblock {
-    width: 600px;
-    height: 600px;
+    width: 32%;
+    height: 65%;
     border: 1px solid white;
     border-radius: 15px;
     position: absolute;
@@ -32,14 +32,14 @@ body {
     transform: translate(-50%, -50%);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    padding: 5px;
 }
 
 .button {
-    width: 100px;
-    height: 100px;
+    width: 85%;
+    height: 85%;
     border-radius: 15px;
-    margin: 10px;
+    margin-left: 7%;
+    margin-top: 7%;
 }
 
 .button:hover {
@@ -47,13 +47,13 @@ body {
 }
 
 #counter {
-    width: 200px;
-    height: 50px;
+    width: 10%;
+    height: 5%;
     color: white;
     border: 1px solid white;
     border-radius: 15px;
     text-align: center;
-    line-height: 50px;
+    line-height: 300%;
     position: absolute;
     top: 10%;
     left: 40%;
@@ -61,13 +61,13 @@ body {
 }
 
 #hearts {
-    width: 200px;
-    height: 50px;
+    width: 10%;
+    height: 5%;
     color: white;
     border: 1px solid white;
     border-radius: 15px;
     text-align: center;
-    line-height: 50px;
+    line-height: 300%;
     position: absolute;
     top: 10%;
     left: 60%;
@@ -75,13 +75,13 @@ body {
 }
 
 #miss {
-    width: 200px;
-    height: 50px;
+    width: 10%;
+    height: 5%;
     color: white;
     border: 1px solid red;
     border-radius: 15px;
     text-align: center;
-    line-height: 50px;
+    line-height: 300%;
     display: none;
     position: absolute;
     top: 90%;
@@ -90,24 +90,24 @@ body {
 }
 
 #endblock {
-    width: 500px;
-    height: 500px;
+    width: 25%;
+    height: 65%;
     border: 1px solid red;
     border-radius: 15px;
     position: absolute;
     top: 50%;
-    left: 85%;
+    left: 83%;
     transform: translate(-50%, -50%);
     padding: 5px;
     display: none;
 }
 
 #lose {
-    width: 350px;
-    height: 100px;
+    width: 65%;
+    height: 15%;
     border: 1px solid white;
     color: white;
-    line-height: 100px;
+    line-height: 190%;
     text-align: center;
     font-size: 50px;
     border-radius: 15px;
@@ -119,12 +119,12 @@ body {
 }
 
 #restart {
-    width: 250px;
-    height: 80px;
+    width: 45%;
+    height: 10%;
     background-color: white;
     border: 1px solid white;
     color: black;
-    line-height: 80px;
+    line-height: 160%;
     text-align: center;
     font-size: 40px;
     border-radius: 15px;
@@ -150,8 +150,8 @@ body {
 }
 
 #mainblock_end {
-    width: 600px;
-    height: 600px;
+    width: 32%;
+    height: 65%;
     border: 1px solid white;
     border-radius: 15px;
     position: absolute;
@@ -160,7 +160,6 @@ body {
     transform: translate(-50%, -50%);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    padding: 5px;
     display: none;
 }
 
@@ -174,15 +173,15 @@ body {
 }
 
 #leaderboard_block {
-    width: 500px;
-    height: 600px;
+    width: 25%;
+    height: 100%;
     border: 1px solid white;
     text-align: center;
     font-size: 20px;
     color: white;
     border-radius: 15px;
-    margin-top: 165px;
-    margin-left: 80px;
+    margin-top: 9%;
+    margin-left: 5%;
 }
 
 #leaderboard {
@@ -235,8 +234,8 @@ tr:nth-child(even) {
 
 
 #mainblock_start {
-    width: 600px;
-    height: 600px;
+    width: 32%;
+    height: 65%;
     background-color: black;
     border: 1px solid white;
     border-radius: 15px;
@@ -251,12 +250,12 @@ tr:nth-child(even) {
 }
 
 #nickname_input {
-    width: 200px;
-    height: 50px;
+    width: 30%;
+    height: 8%;
     border: 1px solid white;
     color: black;
     text-align: center;
-    line-height: 50px;
+    line-height: 100%;
     font-size: 20px;
     border-radius: 15px;
     position: absolute;
@@ -266,12 +265,12 @@ tr:nth-child(even) {
 }
 
 #add {
-    width: 200px;
-    height: 50px;
+    width: 35%;
+    height: 8%;
     border: 1px solid white;
     color: white;
     text-align: center;
-    line-height: 50px;
+    line-height: 250%;
     font-size: 20px;
     border-radius: 15px;
     position: absolute;
