@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black
+}
+
+#add:hover {
+    background-color: white;
+    color: black;
+    transition-property: background;
+    transition-duration: 1s;
+}
+
+#add:not(:hover) {
+    background-color: black;
+    color: white;
+    transition-property: background;
+    transition-duration: 1s;
+}
+
+#mainblock {
+    width: 600px;
+    height: 600px;
+    border: 1px solid white;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 5px;
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.button:hover {
+    scale: 0.95;
+}
+
+#counter {
+    width: 200px;
+    height: 50px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+#hearts {
+    width: 200px;
+    height: 50px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+#miss {
+    width: 200px;
+    height: 50px;
+    color: white;
+    border: 1px solid red;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 50px;
+    display: none;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#endblock {
+    width: 500px;
+    height: 500px;
+    border: 1px solid red;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    display: none;
+}
+
+#lose {
+    width: 350px;
+    height: 100px;
+    border: 1px solid white;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+    font-size: 50px;
+    border-radius: 15px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#restart {
+    width: 250px;
+    height: 80px;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    line-height: 80px;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#restart:hover {
+    background-color: black;
+    color: white;
+    transition-property: background;
+    transition-duration: 1s;
+}
+
+#restart:not(:hover) {
+    background-color: white;
+    color: black;
+    transition-property: background;
+    transition-duration: 1s;
+}
+
+#mainblock_end {
+    width: 600px;
+    height: 600px;
+    border: 1px solid white;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 5px;
+    display: none;
+}
+
+#background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 120%;
+}
+
+#leaderboard_block {
+    width: 500px;
+    height: 600px;
+    border: 1px solid white;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 15px;
+    margin-top: 165px;
+    margin-left: 80px;
+}
+
+#leaderboard {
+    max-height: 525px;
+    /* Высота, после которой появляется скролл */
+    overflow-y: auto;
+    /* Включаем вертикальную прокрутку */
+    margin-top: 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Немного улучшим таблицу */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+thead {
+    background-color: #222;
+    position: sticky;
+    /* Заголовок остаётся на месте при прокрутке */
+    top: 0;
+}
+
+tr:nth-child(even) {
+    background-color: #1a1a1a;
+}
+
+/* Стилизация полосы прокрутки (опционально, только для красоты) */
+#leaderboard::-webkit-scrollbar {
+    width: 5px;
+}
+
+#leaderboard::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 15px;
+}
+
+#leaderboard::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+}
+
+
+
+#mainblock_start {
+    width: 600px;
+    height: 600px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 5px;
+    z-index: 1;
+}
+
+#nickname_input {
+    width: 200px;
+    height: 50px;
+    border: 1px solid white;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#add {
+    width: 200px;
+    height: 50px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 15px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}

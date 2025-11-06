@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>COLOR GAME</title>
+</head>
+
+<body>
+    <video autoplay loop muted plays-inline id="background-clip">
+        <source src="img/spacebackground.mp4" type="video/mp4">
+    </video>
+    <div id="mainblock_start">
+        <input id="nickname_input" type="text" placeholder="Nickname...">
+        <div id="add">ADD</div>
+    </div>
+    <div id="mainblock">
+        <div class="button" id="1"></div>
+        <div class="button" id="2"></div>
+        <div class="button" id="3"></div>
+        <div class="button" id="4"></div>
+        <div class="button" id="5"></div>
+        <div class="button" id="6"></div>
+        <div class="button" id="7"></div>
+        <div class="button" id="8"></div>
+        <div class="button" id="9"></div>
+        <div class="button" id="10"></div>
+        <div class="button" id="11"></div>
+        <div class="button" id="12"></div>
+        <div class="button" id="13"></div>
+        <div class="button" id="14"></div>
+        <div class="button" id="15"></div>
+        <div class="button" id="16"></div>
+        <div class="button" id="17"></div>
+        <div class="button" id="18"></div>
+        <div class="button" id="19"></div>
+        <div class="button" id="20"></div>
+        <div class="button" id="21"></div>
+        <div class="button" id="22"></div>
+        <div class="button" id="23"></div>
+        <div class="button" id="24"></div>
+        <div class="button" id="25"></div>
+    </div>
+    <div id="counter">COUNT: 0</div>
+    <div id="hearts">HEARTS: 3</div>
+    <div id="miss">MISS: </div>
+    <div id="endblock">
+        <div id="lose">YOU LOSE</div>
+        <div id="restart">RESTART</div>
+    </div>
+    <div id="mainblock_end"></div>
+    <div id="leaderboard_block">
+        <h2>🏆 LEADERBOARD</h2>
+        <div id="leaderboard"></div>
+    </div>
+    <script type="module" src="javascript.js"></script>
+</body>
+
+</html>
