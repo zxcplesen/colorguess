@@ -3,12 +3,11 @@ var hearts = 3;
 var count = 0;
 var miss_count = 0;
 var nickname = '';
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
 import { getDatabase, ref, push, set, onValue } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-database.js";
 
-// Конфигурация Firebase
+//
 const firebaseConfig = {
     apiKey: "AIzaSyDH1L9Jx0kd-T7KOjv4aAp1h71i2KlHGvo",
     authDomain: "test-c68dd.firebaseapp.com",
@@ -20,7 +19,6 @@ const firebaseConfig = {
     measurementId: "G-4GBBF35FQV"
 };
 
-// Инициализация Firebase
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
@@ -33,9 +31,6 @@ function addScoreToDatabase(nickname, count) {
         count: count,
         date: new Date().toISOString()
     })
-        .then(() => {
-            console.log("Данные успешно добавлены!");
-        })
         .catch((error) => {
             console.error("Ошибка при добавлении:", error);
             alert("Ошибка при отправке данных!");
@@ -45,7 +40,6 @@ function addScoreToDatabase(nickname, count) {
 function loadLeaderboard() {
     const scoresRef = ref(db, "scores");
 
-    // onValue — слушатель, обновляет данные при любом изменении в БД
     onValue(scoresRef, (snapshot) => {
         const data = snapshot.val();
         const leaderboardDiv = document.getElementById("leaderboard");
@@ -55,13 +49,10 @@ function loadLeaderboard() {
             return;
         }
 
-        // Преобразуем данные из объекта в массив
         const scores = Object.values(data);
 
-        // Сортируем по убыванию count
         scores.sort((a, b) => b.count - a.count);
 
-        // Генерируем HTML таблицы
         let html = `
       <table border="1" cellspacing="0" cellpadding="5" style="width:100%; color:white; text-align:center;">
         <thead style="background-color: #222;">
@@ -95,11 +86,11 @@ window.addEventListener("DOMContentLoaded", () => {
         button.addEventListener("click", addScoreToDatabase);
     }
 
-    loadLeaderboard(); // подгружаем таблицу сразу при загрузке
+    loadLeaderboard();
 });
 
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
 document.addEventListener("DOMContentLoaded", function () {
     Start();
 });
@@ -244,3 +235,4 @@ function ClickMiss(e) {
 function ClickRestart() {
     location.reload();
 }
+
