@@ -137,25 +137,19 @@ function Start() {
         else if (count >= 14 && count < 16)
             el[fake_id - 1].style.backgroundColor = `rgb(${red + 20}, ${green + 20}, ${blue + 20})`;
         else if (count >= 16 && count < 18)
-            el[fake_id - 1].style.backgroundColor = `rgb(${red + 19}, ${green + 19}, ${blue + 19})`;
-        else if (count >= 18 && count < 20)
-            el[fake_id - 1].style.backgroundColor = `rgb(${red + 18}, ${green + 18}, ${blue + 18})`;
-        else if (count >= 20 && count < 22)
-            el[fake_id - 1].style.backgroundColor = `rgb(${red + 17}, ${green + 17}, ${blue + 17})`;
-        else if (count >= 22 && count < 24)
-            el[fake_id - 1].style.backgroundColor = `rgb(${red + 16}, ${green + 16}, ${blue + 16})`;
-        else if (count >= 24 && count < 26)
             el[fake_id - 1].style.backgroundColor = `rgb(${red + 15}, ${green + 15}, ${blue + 15})`;
-        else if (count >= 26 && count < 28)
-            el[fake_id - 1].style.backgroundColor = `rgb(${red + 14}, ${green + 14}, ${blue + 14})`;
-        else if (count >= 28 && count < 30)
+        else if (count >= 18 && count < 20)
             el[fake_id - 1].style.backgroundColor = `rgb(${red + 13}, ${green + 13}, ${blue + 13})`;
-        else if (count >= 30 && count < 32)
-            el[fake_id - 1].style.backgroundColor = `rgb(${red + 12}, ${green + 12}, ${blue + 12})`;
-        else if (count >= 32 && count < 34)
+        else if (count >= 20 && count < 22)
             el[fake_id - 1].style.backgroundColor = `rgb(${red + 11}, ${green + 11}, ${blue + 11})`;
-        else if (count >= 34)
+        else if (count >= 22 && count < 24)
             el[fake_id - 1].style.backgroundColor = `rgb(${red + 10}, ${green + 10}, ${blue + 10})`;
+        else if (count >= 24 && count < 26)
+            el[fake_id - 1].style.backgroundColor = `rgb(${red + 9}, ${green + 9}, ${blue + 9})`;
+        else if (count >= 26 && count < 28)
+            el[fake_id - 1].style.backgroundColor = `rgb(${red + 8}, ${green + 8}, ${blue + 8})`;
+        else if (count >= 28)
+            el[fake_id - 1].style.backgroundColor = `rgb(${red + 7}, ${green + 7}, ${blue + 7})`;
         
         el[fake_id - 1].removeEventListener('click', ClickMiss);
         el[fake_id - 1].addEventListener('click', ClickFake);
@@ -235,4 +229,5 @@ function ClickMiss(e) {
 function ClickRestart() {
     location.reload();
 }
+
 
